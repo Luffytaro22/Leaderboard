@@ -1,4 +1,4 @@
-export default function newScore(name, score) {
+export default function Score(name, score) {
   this.name = name;
   this.score = score;
 }
