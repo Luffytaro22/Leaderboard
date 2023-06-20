@@ -25,9 +25,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Tic Tac Toe <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
-**Tic Tac Toe** allows two people to register and play against each other in the world-wide popular game.
+**Leaderboard** allows the users to introduce their name and their scores and the information is saved with the help of an API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,7 +42,7 @@
 
 ### Key Features <a name="key-features"></a>
 * Use of Modules.
-* 3-in-a-row or draw logic.
+* API.
 * Javascript's dynamics.
 * Use of Webpack.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -50,8 +50,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo](https://luffytaro22.github.io/Tic-Tac-Toe/dist/)
+**Out or service by the moment.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,13 +89,13 @@ This will download all this dependencies: <br>
 
 ### Setup
 * Clone this repository to your desired folder: <br>
-`git@github.com:Luffytaro22/Tic-Tac-Toe.git`
+`git@github.com:Luffytaro22/Leaderboard.git`
 
 * Initialize it with <br>
 `npm start`
 
 ### Deployment
-You can deploy the project with [this link](https://luffytaro22.github.io/Tic-Tac-Toe/dist/)
+**Out or service by the moment.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,8 +115,8 @@ You can deploy the project with [this link](https://luffytaro22.github.io/Tic-Ta
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-* More Animations.
-* Improve 3-in-a-row logic.
+* Use of an API.
+* Refresh button functionality.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
