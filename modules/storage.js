@@ -1,5 +1,6 @@
 function createScores(scores) {
   scores = localStorage.getItem('scores') ? JSON.parse(localStorage.getItem('scores')) : [];
+  return scores;
 }
 
 function storage(scores) {
