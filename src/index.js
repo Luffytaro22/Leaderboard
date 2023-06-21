@@ -1,5 +1,5 @@
 import './styles.css';
-import { form } from '../modules/elements.js';
+import { form, refreshButton } from '../modules/elements.js';
 // eslint-disable-next-line import/no-named-as-default
 import newScore from '../modules/newScores.js';
 import { createScores } from '../modules/storage.js';
@@ -16,4 +16,8 @@ async function loadScores() {
 
 loadScores();
 
+refreshButton.addEventListener('click', () => {
+  document.getElementById('scores-container').innerHTML = '';
+  loadScores();
+});
 form.addEventListener('submit', newScore);
