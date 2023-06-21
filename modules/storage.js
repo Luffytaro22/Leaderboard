@@ -23,15 +23,25 @@ function storage(scores) {
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Z3iGcEUE1HlerNd8QYix/scores/', {
     method: 'POST',
     body: JSON.stringify({
-      user: `${scores.user}`,
-      score: `${scores.score}`,
+      user: scores.user,
+      score: scores.score,
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
-    .then((response) => response.json())
-    .then((json) => json);
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Error al agregar el puntaje');
+      }
+      return response.json();
+    })
+    .then((json) => {
+      console.log('Puntaje agregado:', json);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 }
 
 export { createScores, storage };
