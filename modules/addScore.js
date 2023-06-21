@@ -6,7 +6,7 @@ export default function addScore(scores) {
 
   // Add classes and content
   divContainer.classList.add('scores');
-  pName.textContent = `${scores.name}: `;
+  pName.textContent = `${scores.user}: `;
   pScore.textContent = scores.score;
 
   // Append elements
