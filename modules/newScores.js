@@ -11,11 +11,14 @@ export default async function newScore(event) {
     const myScore = new Score(inputName.value, inputScore.value);
     // Adds the score to the table.
     addScore(myScore);
+    try {
+      // Save the updated array in the API
+      await storage({ score: myScore.score, user: myScore.user });
 
-    // Save the updated array in the API
-    await storage({ score: myScore.score, user: myScore.user });
-
-    // Resets the form.
-    form.reset();
+      // Resets the form.
+      form.reset();
+    } catch (error) {
+      throw new Error(`${error}`);
+    }
   }
 }

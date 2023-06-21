@@ -6,13 +6,17 @@ import { createScores } from '../modules/storage.js';
 import addScore from '../modules/addScore.js';
 
 // Display the scores in the table.
-async function loadScores() {
-  const scores = await createScores();
+const loadScores = async () => {
+  try {
+    const scores = await createScores();
 
-  scores.result.forEach((obj) => {
-    addScore(obj);
-  });
-}
+    scores.result.forEach((obj) => {
+      addScore(obj);
+    });
+  } catch (error) {
+    throw new Error(`${error}`);
+  }
+};
 
 loadScores();
 
