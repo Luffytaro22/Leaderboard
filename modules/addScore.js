@@ -1,4 +1,4 @@
-export default function addScore(scores) {
+const addScore = (scores) => {
   // Create elements
   const divContainer = document.createElement('div');
   const pName = document.createElement('p');
@@ -13,4 +13,6 @@ export default function addScore(scores) {
   divContainer.appendChild(pName);
   divContainer.appendChild(pScore);
   document.getElementById('scores-container').appendChild(divContainer);
-}
+};
+
+export default addScore;

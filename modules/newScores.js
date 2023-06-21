@@ -3,7 +3,7 @@ import { form, inputName, inputScore } from './elements.js';
 import { storage } from './storage.js';
 import addScore from './addScore.js';
 
-export default async function newScore(event) {
+const newScore = async (event) => {
   // If the name and score inputs are not empty.
   if (!inputName.validity.valueMissing && !inputScore.validity.valueMissing) {
     event.preventDefault();
@@ -21,4 +21,6 @@ export default async function newScore(event) {
       throw new Error(`${error}`);
     }
   }
-}
+};
+
+export default newScore;
