@@ -1,20 +1,24 @@
-async function createScores() {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Z3iGcEUE1HlerNd8QYix/scores/', {
-    method: 'GET',
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  });
+const createScores = async () => {
+  try {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Z3iGcEUE1HlerNd8QYix/scores/', {
+      method: 'GET',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    });
 
-  if (!response.ok) {
-    throw new Error('Error al obtener los puntajes');
+    if (!response.ok) {
+      throw new Error('Error at getting the scores');
+    }
+
+    // eslint-disable-next-line no-return-await
+    return await response.json();
+  } catch (error) {
+    throw new Error(`${error}`);
   }
+};
 
-  const json = await response.json();
-  return json;
-}
-
-function storage(scores) {
+const storage = async (scores) => {
   fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Z3iGcEUE1HlerNd8QYix/scores/', {
     method: 'POST',
     body: JSON.stringify({
@@ -27,10 +31,13 @@ function storage(scores) {
   })
     .then((response) => {
       if (!response.ok) {
-        throw new Error('Error al agregar el puntaje');
+        throw new Error('Error at adding the score');
       }
       return response.json();
+    })
+    .catch((error) => {
+      throw new Error(`${error}`);
     });
-}
+};
 
 export { createScores, storage };
