@@ -1,4 +1,4 @@
-export default function addScore(scores) {
+const addScore = (scores) => {
   // Create elements
   const divContainer = document.createElement('div');
   const pName = document.createElement('p');
@@ -6,11 +6,13 @@ export default function addScore(scores) {
 
   // Add classes and content
   divContainer.classList.add('scores');
-  pName.textContent = `${scores.name}: `;
+  pName.textContent = `${scores.user}: `;
   pScore.textContent = scores.score;
 
   // Append elements
   divContainer.appendChild(pName);
   divContainer.appendChild(pScore);
   document.getElementById('scores-container').appendChild(divContainer);
-}
+};
+
+export default addScore;
