@@ -1,4 +1,4 @@
 export default function Score(name, score) {
-  this.name = name;
+  this.user = name;
   this.score = score;
 }
