@@ -36,12 +36,14 @@ form {
   align-items: center;
   background: linear-gradient(180deg, #930d29, #ffa702);
   padding: 30px 10px;
+  box-shadow: 0 0 10px 5px #030303;
 }
 
 .scores {
   display: flex;
   padding: 10px 10px;
   gap: 10px;
+  font-weight: bolder;
 }
 
 .scores:nth-child(even) {
@@ -53,7 +55,8 @@ form {
 }
 
 #scores-container {
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 #recent-scores {
@@ -72,10 +75,19 @@ form {
 
 form input {
   padding: 5px 10px;
+  font-weight: bolder;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
 }
 
 #submit-button,
 #refresh-button {
   align-self: flex-end;
-  padding: 5px 10px;
+  padding: 10px 20px;
+  border-radius: 10px 0 10px 10px;
+  border: 2px solid black;
+  font-weight: bolder;
+  background: none;
 }
