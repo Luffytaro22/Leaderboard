@@ -59,40 +59,68 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 ### Prerequisites
-In order to run this project you need to run this command:
-* Install npm <br>
-`npm install`
+In order to run this project you need to have:
 
-This will download all this dependencies: <br>
-* Install Webpack <br>
-`npm install webpack webpack-cli --save-dev`
-
-* Install style and css loader <br>
-`npm install --save-dev style-loader css-loader`
-
-* Install HTML Webpack plugin <br>
-`npm install --save-dev html-webpack-plugin`
-
-* Install Webpack-dev-server <br>
-`npm install --save-dev webpack-dev-server`
-* Install Jest <br>
-`npm install --save-dev jest`
-* Install Webhint <br>
-`npm install --save-dev hint@7.x`
-* Install Stylelint <br>
-`npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x`
-* Install ESLint <br>
-`npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
-* Install Babel <br>
-`npm install --save-dev babel-jest @babel/core @babel/preset-env`
-
+- A Text Editor
+- A Browser
 
 ### Setup
-* Clone this repository to your desired folder: <br>
-`git@github.com:Luffytaro22/Leaderboard.git`
+* To clone this repository to your desired folder: <br>
+
+Run the following command
+
+```
+git clone git@github.com:Luffytaro22/Leaderboard.git
+```
+
+### Install
+```
+ npm install
+```
+This will download all this dependencies: <br>
+* Install Webpack <br>
+```
+npm install webpack webpack-cli --save-dev
+```
+
+* Install style and css loader <br>
+```
+npm install --save-dev style-loader css-loader
+```
+
+* Install HTML Webpack plugin <br>
+```
+npm install --save-dev html-webpack-plugin
+```
+
+* Install Webpack-dev-server <br>
+```
+npm install --save-dev webpack-dev-server
+```
+* Install Jest <br>
+  `npm install --save-dev jest
+```
+* Install Webhint <br>
+`npm install --save-dev hint@7.x
+```
+* Install Stylelint <br>
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+```
+* Install ESLint <br>
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+```
+* Install Babel <br>
+```
+npm install --save-dev babel-jest @babel/core @babel/preset-env`
+```
+### Usage
 
 * Initialize it with <br>
-`npm start`
+```
+npm run start
+```
 
 ### Deployment
 **Out or service by the moment.**
@@ -132,6 +160,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
+If you like this project please give it a star ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -4,6 +4,13 @@ import { form, refreshButton } from '../modules/elements.js';
 import newScore from '../modules/newScores.js';
 import { createScores } from '../modules/storage.js';
 import addScore from '../modules/addScore.js';
+import webIcon from './assets/puntuacion.png';
+
+// Add web icon
+const link = document.createElement('link');
+link.href = webIcon;
+link.rel = 'icon';
+document.querySelector('head').appendChild(link);
 
 // Display the scores in the table.
 const loadScores = async () => {
