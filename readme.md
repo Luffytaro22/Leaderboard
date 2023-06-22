@@ -50,7 +50,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-**Out or service by the moment.**
+* [Live Demo](https://luffytaro22.github.io/Leaderboard/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -61,13 +61,11 @@
 ### Prerequisites
 In order to run this project you need to have:
 
-- A Text Editor
-- A Browser
+- A Text Editor.
+- A Browser.
 
 ### Setup
-* To clone this repository to your desired folder: <br>
-
-Run the following command
+To clone this repository to your desired folder, run the following command: <br>
 
 ```
 git clone git@github.com:Luffytaro22/Leaderboard.git
@@ -80,50 +78,52 @@ git clone git@github.com:Luffytaro22/Leaderboard.git
 This will download all this dependencies: <br>
 * Install Webpack <br>
 ```
-npm install webpack webpack-cli --save-dev
+  npm install webpack webpack-cli --save-dev
 ```
 
 * Install style and css loader <br>
 ```
-npm install --save-dev style-loader css-loader
+  npm install --save-dev style-loader css-loader
 ```
 
 * Install HTML Webpack plugin <br>
 ```
-npm install --save-dev html-webpack-plugin
+  npm install --save-dev html-webpack-plugin
 ```
 
 * Install Webpack-dev-server <br>
 ```
-npm install --save-dev webpack-dev-server
+  npm install --save-dev webpack-dev-server
 ```
 * Install Jest <br>
-  `npm install --save-dev jest
+```
+  npm install --save-dev jest
 ```
 * Install Webhint <br>
-`npm install --save-dev hint@7.x
+```
+  npm install --save-dev hint@7.x
 ```
 * Install Stylelint <br>
 ```
-npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
 * Install ESLint <br>
 ```
-npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
+  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x`
 ```
 * Install Babel <br>
 ```
-npm install --save-dev babel-jest @babel/core @babel/preset-env`
+  npm install --save-dev babel-jest @babel/core @babel/preset-env`
 ```
 ### Usage
 
-* Initialize it with <br>
+Initialize it with <br>
 ```
 npm run start
 ```
 
 ### Deployment
-**Out or service by the moment.**
+You can deploy this project with [This Link](https://luffytaro22.github.io/Leaderboard/dist/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
