@@ -5,7 +5,8 @@
 
 h1 {
   text-align: center;
-  margin: 50px 0;
+  padding: 30px 0;
+  background: linear-gradient(0deg, chocolate, brown);
 }
 
 h3 {
@@ -26,6 +27,14 @@ form {
   justify-content: space-around;
 }
 
+#score-section {
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  background: linear-gradient(180deg, #930d29, #ffa702);
+  padding: 30px 10px;
+}
+
 .scores {
   display: flex;
   padding: 10px 10px;
@@ -33,7 +42,7 @@ form {
 }
 
 .scores:nth-child(even) {
-  background-color: beige;
+  background-color: #af0734;
 }
 
 #left-container {
