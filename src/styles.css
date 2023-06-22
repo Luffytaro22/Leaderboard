@@ -25,6 +25,7 @@ h3 {
 
 button:hover {
   cursor: pointer;
+  box-shadow: 0 0 5px 2px black;
 }
 
 #score-section,
@@ -102,6 +103,7 @@ form input {
   border: 2px solid black;
   font-weight: bolder;
   background: none;
+  transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
