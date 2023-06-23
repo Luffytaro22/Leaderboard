@@ -1,6 +1,5 @@
 import { form, inputName, inputScore } from './elements.js';
 import { storage } from './storage.js';
-import addScore from './addScore.js';
 
 const newScore = async (event) => {
   // If the name and score inputs are not empty.
@@ -9,8 +8,7 @@ const newScore = async (event) => {
 
     const name = inputName.value;
     const scoreV = inputScore.value;
-    // Adds the score to the table.
-    addScore({ score: scoreV, user: name });
+
     try {
       // Save the updated array in the API
       await storage({ score: scoreV, user: name });
