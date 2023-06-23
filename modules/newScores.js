@@ -1,4 +1,3 @@
-import Score from './constructor.js';
 import { form, inputName, inputScore } from './elements.js';
 import { storage } from './storage.js';
 import addScore from './addScore.js';
@@ -7,13 +6,14 @@ const newScore = async (event) => {
   // If the name and score inputs are not empty.
   if (!inputName.validity.valueMissing && !inputScore.validity.valueMissing) {
     event.preventDefault();
-    // Creates a new object.
-    const myScore = new Score(inputName.value, inputScore.value);
+
+    const name = inputName.value;
+    const scoreV = inputScore.value;
     // Adds the score to the table.
-    addScore(myScore);
+    addScore({ score: scoreV, user: name });
     try {
       // Save the updated array in the API
-      await storage({ score: myScore.score, user: myScore.user });
+      await storage({ score: scoreV, user: name });
 
       // Resets the form.
       form.reset();
