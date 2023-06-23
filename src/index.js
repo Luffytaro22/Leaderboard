@@ -17,6 +17,9 @@ const loadScores = async () => {
   try {
     const scores = await createScores();
 
+    // Sort the array from the highest score to the lowest.
+    scores.result.sort((obj1, obj2) => obj2.score - obj1.score);
+
     scores.result.forEach((obj) => {
       addScore(obj);
     });

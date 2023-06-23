@@ -70,6 +70,17 @@ form {
 #scores-container {
   border: 2px solid black;
   border-radius: 10px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+#scores-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+#scores-container::-webkit-scrollbar-thumb {
+  background-color: #af0734;
+  border-radius: 10px;
 }
 
 #recent-scores {
